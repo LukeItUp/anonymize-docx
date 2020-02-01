@@ -18,7 +18,6 @@ python scripty.py file_1.docx file_2.docx ... file_n.docx
 ```
 
 ### Example file
-Place `anonymization-example.docx` in `example` directory and run:
 ```
 python script.py
 ```
