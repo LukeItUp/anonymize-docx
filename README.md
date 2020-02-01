@@ -14,10 +14,10 @@ Note: when prompted, please install slovenian models in project directory.
 
 ## Usage
 ```
-python scripty.py file_1.docx file_2.docx ... file_n.docx
+python scripty.py anonymization-example.docx to-anonymize2.txt
 ```
 
-### Example file
+### Example files
 ```
 python script.py
 ```
