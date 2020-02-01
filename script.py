@@ -1,9 +1,7 @@
-
 import sys
 import os
 import subprocess
 import stanfordnlp
-
 
 documents = ["./example/anonymization-example.docx"]  # Example
 
@@ -45,9 +43,10 @@ def anonymize(text):
 
 
 if __name__ == '__main__':
-    if sys.argv[1] == "setup":
-        print("Please install models in project directory.")
+    if len(sys.argv) == 2 and sys.argv[1] == "setup":
+        print("\n-!!!- When asked, please install models in project directory (.) -!!!-")
         stanfordnlp.download("sl")
+        sys.exit()
 
     if len(sys.argv) == 1:
         print("Running example document")
